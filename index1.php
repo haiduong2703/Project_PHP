@@ -44,6 +44,7 @@
         if ($tam== 'addDocument'){
             include("./pages/addDoc.php");
         }
+        include("./pages/footer.php");
     ?>
 </body>
 
