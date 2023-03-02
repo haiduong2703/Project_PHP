@@ -408,3 +408,15 @@ td {
     padding-left: 40px;
     padding-top: 30px;
 }
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: -326px;
+    height: 50px;
+    background-color: rgb(142, 181, 231);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

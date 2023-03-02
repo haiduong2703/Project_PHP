@@ -44,6 +44,7 @@
             include("./pages/support.php");
     
         }
+        include("./pages/footer.php");
         
     ?>
 </body>
