@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+
+}
+
+.row_sidebar {
+    z-index: 0;
+}
+
+.top_sidebar a {
+    text-decoration: none;
+    font-size: 15px;
+    height: 400px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin-left: 5px;
+}
+
+.top_sidebar li {
+    width: 200px;
+    height: 30px;
+
+    list-style: none;
+}
+
+.top_sidebar li a:hover {
+    color: blue;
+}
+
+.container_sidebar {
+    width: 300px;
+    height: auto;
+    background-color: rgb(238, 238, 238);
+    margin-left: 100px;
+
+}
+
+.row_sidebar {
+    width: 300px;
+    height: 500px;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.top_sidebar {
+    width: 200px;
+    height: 150px;
+    border-bottom: 1px solid #a5a5a5;
+    ;
+}
+
+#bottom_sidebar {
+    margin-top: 30px;
+}
+
+#bottom_sidebar li a {
+    font-weight: 100;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+
+}
+
+#bottom_sidebar li i {
+    position: absolute;
+    right: 0;
+}
+
+.myDiv {
+    margin-top: 20px;
+    display: none;
+}
+
+#bottom_sidebar li {
+    height: 60px;
+    width: 200px;
+    list-style: none;
+    position: relative;
+}
+
+#bottom_sidebar li ul>li {
+    height: 40px;
+    color: #a5a5a5;
+    font-size: 16px;
+
+}
+
+#bottom_sidebar li ul>li a {
+    color: #a5a5a5;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#yourproject {
+    height: 60px;
+}
+
+#yourproject a {
+    text-decoration: none;
+}

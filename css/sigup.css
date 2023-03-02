@@ -1,0 +1,71 @@
+* {
+    margin: 0 auto;
+    
+}
+.container{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.left {
+    width: 20%;
+    margin-left: -10px;
+}
+.right{
+    width: 60%;
+    margin-top: 120px;
+}
+.r2{
+    width: 10%;
+}
+table {
+    background-image: linear-gradient(to right , #FFFF , #24f0ff33);
+    color: black;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    margin-left: 530px;
+}
+table tr td {
+    padding: 20px;
+}
+
+#sm {
+    text-align: center;
+}
+input{
+    border: 0.5px solid #24f0ff33;
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+}
+#sigup , #login{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right , #FFFF, #24f0ff33);
+}
+.r2{
+    margin-top: 100px;
+    margin-left: -20px;
+    display: flex;
+}
+.r2 button{
+    border: 0;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right , #FFFF, #24f0ff33);
+}
+a{
+    text-decoration: none;
+}

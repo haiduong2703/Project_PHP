@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container_content {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    margin-top: 50px;
+}
+
+.row_content {
+    background: rgb(238, 238, 238);
+    margin-left: 50px;
+    height: auto;
+    width: 70%;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.row_content h1 {
+    color: gray;
+    font-weight: 100;
+}
+
+.projects {
+    display: flex;
+    margin-top: 50px;
+}
+
+.projects a {
+    text-decoration: none;
+}
+
+.project {
+    width: 350px;
+    height: 250px;
+    border: 0px solid gray;
+    border-radius: 10px;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://qsoft.vn/wp-content/uploads/2022/06/nganh-IT-la-gi-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: gray;
+}
+
+.project h3 {
+    color: rgb(97, 97, 97);
+}
+
+.nameProject {
+    width: 350px;
+    text-align: center;
+}
+
+.nameProject {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.message {
+    font-size: 20px;
+    color: rgb(150, 150, 150);
+}

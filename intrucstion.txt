@@ -1,0 +1,79 @@
+<cú pháp hoặc chú thích nằm trong ngoặc này>
+
+Khởi tạo Project: 
+git clone https://github.com/beHoang3tui/PHP_Haui
+
+Quy ước nhánh chính tại máy local tên là main bằng lệnh:
+git branch -M main
+
+Luồng làm việc:
+ 
+Trước khi code:
+git pull
+git branch <tên nhánh phụ>
+<quy ước đặt tên nhánh phụ: <Tên tính năng hoặc phiên làm việc>
+<ví dụ: git branch TrangShop_DangHoanThien>
+
+git checkout <tên nhánh phụ vừa tạo>
+<bước này chuyển nơi làm việc từ nhánh chính qua nhánh phụ để code>
+
+<Code..>
+<Hoàn thành 1 phần, kiểm tra không lỗi...>
+
+git add . <add file vừa thực hiện sửa đổi>
+<lưu ý dùng git add . tại đường dẫn thư mục gốc hoặc viết hẳn tên file vừa thực hiện thay đổi>
+
+git commit -m"Vừa hoàn thành chức năng X nào đó"
+<không cần phải chuẩn chỉnh nhưng nên commit dễ hiểu và ngắn gọn mọi người đọc dễ hiểu liền>
+
+<lại code tiếp..>
+<thực hiện lại bước git add và git commit liên tục>
+
+<kết thúc phiên làm việc hoặc hoàn thành 1 trang phải push code tạo pull request>
+
+git push -u origin <tên nhánh phụ vừa tạo>
+<up code lên github, trước khi up kiểm tra xem có add thiếu file không, xem xem có add nhầm file không>
+
+Sau khi thực hiện xong các bước này, lên web vào link github https://github.com/beHoang3tui/PHP_Haui 
+sau đó qua mục Pull Request kiểm tra phần code vừa push lên. Tại đó vào mục Pull Request, bấm chọn
+Compare and pull, sau đó viết comment và bấm Create pull request
+Đợi lead kiểm tra, nếu không ổn, xung đột code sẽ được yêu cầu hủy pull request và fix lại 
+Nếu ổn, lead đồng ý Gộp code : merge request
+-> Xong
+
+
+Sau khi pull request được Approve: Chấp nhận, code sẽ tự động được gộp vào nhánh chính
+Khi này, tại máy tính local cá nhân, nhánh phụ vừa tạo khi nãy đã hoàn thành nhiệm vụ của nó
+Thực hiện Checkout quay lại nhánh chính local bằng lệnh:
+git checkout <Tên nhánh chính>
+Sau đó thực hiện xóa nhánh phụ kia
+Xóa nó đi bằng lệnh: git branch -D <tên nhánh phụ cần xóa>
+Nếu không nhớ tên nhánh phụ, dùng lệnh 
+git branch 
+để xem hiện tại đang ở nhánh nào và xem tên tất cả các nhánh hiện có tại local
+
+Bắt đầu 1 phiên làm việc mới bằng những bước như trên
+Cuối cùng, kết thúc phiên làm việc bằng 1 lần kéo code về
+git pull origin main
+
+Ví dụ 1 phiên làm việc đơn giản:
+
+git checkout main
+git pull origin main
+git branch "TaoFileTest"
+git checkout TaoFileTest
+
+<Code ciếc các thứ>
+<Sau khi tạo xong file test>
+
+git add .
+git commit -m"Hoàn thiện tạo file test"
+git push -u origin TaoFileTest
+Sau đó lên Github để tạo Pull Request như hướng dẫn ở trên
+Sau khi hoàn tất quá trình gộp code mới thực hiện bước sau
+git branch -> kiểm tra xem đang ở branch nào
+git checkout main -> cho chắc chắn
+git pull origin main 
+git branch -D TaoFileTest
+
+-> Hoàn tất 1 phiên làm việc
